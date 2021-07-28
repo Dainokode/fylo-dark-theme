@@ -94,6 +94,12 @@
             .social-links {
                 justify-self: center;
                 grid-gap: 3rem;
+
+                ul {
+                    li {
+                        padding-right: 1rem;
+                    }
+                }
             }
         }
     }
