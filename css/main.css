@@ -248,6 +248,7 @@ a {
 
 @media (max-width: 480px) {
   #features {
+    padding: 10rem 0;
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }

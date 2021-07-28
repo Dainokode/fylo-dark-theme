@@ -26,6 +26,7 @@
 
 @media(max-width: 480px){
     #features {
+        padding: 10rem 0;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
         .feature {
