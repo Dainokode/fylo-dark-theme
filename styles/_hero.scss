@@ -1,0 +1,43 @@
+#hero {
+    text-align: center;
+    @include flex(center, column);
+    margin: auto;
+
+    .hero-img {
+        z-index: 2;
+        
+        img {
+            height: 100;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-text {
+        z-index: 2;
+
+        h2 {
+            padding-top: 2rem;
+        }
+
+        p {
+            padding: 3rem 0 2.5rem 0;
+            width: 80%;
+            margin: auto;
+        }
+
+        button {
+            font-size: $paragraph-size;
+        }
+    }
+}
+
+@media(max-width: 330px){
+    #hero {
+        .hero-img {
+            img {
+                max-width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+#main-header {
+    min-height: 90vh;
+
+    .navbar {
+        min-height: 10vh;
+        @include container;
+        padding: 4rem 0;
+        @include flex(space-between, row);
+        flex-wrap: wrap;
+
+        #logo {
+            flex: 3 1 30rem;
+        }
+
+        .nav-links {
+            flex: 1 1 30rem;
+            @include flex(space-evenly, row);
+            
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 680px){
+    #main-header {
+        .navbar {
+            text-align: center;
+
+            #logo {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

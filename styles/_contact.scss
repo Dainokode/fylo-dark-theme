@@ -1,0 +1,66 @@
+#contact {
+    padding: 5rem 6rem;
+    background: hsl(217, 28%, 15%);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    @include flex(center, column);
+    max-width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: -30%;
+    left: 20%;
+
+    p {
+        padding: 3rem 0;
+    }
+
+    form {
+        display: flex;
+
+        button {
+            padding: 1.2rem 2rem;
+        }
+    
+        input {
+            max-width: 100%;
+            border-radius: 50px;
+            border: none;
+            padding: 1.5rem 3.5rem;
+            outline: none;
+            margin-right: 2rem;
+
+            &::placeholder {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px){
+    #contact {
+
+        form {
+            flex-direction: column;
+
+            input {
+                // padding: 1rem 2rem;
+                margin: 0 0 2rem 0;
+                max-width: 100%;
+            }
+
+            button {
+                // padding: 1rem;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    #contact {
+        max-width: 80%;
+        left: 10%;
+    }
+}

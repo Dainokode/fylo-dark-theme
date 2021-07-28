@@ -1,0 +1,36 @@
+#productive {
+    min-height: 100vh;
+    @include flex(space-between, row);
+    @include container;
+    flex-wrap: wrap;
+
+    .productive-img {
+        flex: 1 1 30rem;
+        margin: 0 2rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .productive-text {
+        flex: 1 1 30rem;
+        margin: 0 2rem;
+
+        p {
+            padding: 1.5rem 0;
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 660px){
+    #productive {
+        .productive-text {
+            padding: 5rem 0 15rem;
+        }
+        .productive-img {
+            padding-top: 15rem;
+        }
+    }
+}

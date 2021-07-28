@@ -1,0 +1,99 @@
+// Variables
+$header1: clamp(30px, 3.5vw, 70px);
+$header2: clamp(20px, 3vw, 60px);
+$header3: clamp(18px, 2.5vw, 55px);
+$header4: clamp(16px, 2vw, 50px);
+$header5: clamp(14px, 1.8vw, 45px);
+$header6: clamp(10px, 1.3vw, 20px);
+$paragraph-size: clamp(12px, 1.5vw, 18px);
+$small-paragraph: clamp(12px, 1.4vw, 16px);
+$main-bg: hsl(217, 28%, 15%);
+$footer-bg: hsl(216, 53%, 9%);
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+// basic styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.2;
+    color: #fff;
+    animation: opening 1s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    background: $main-bg;
+}
+
+h1, h2, h3, h4, h5, h6, button, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: $header1;
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+}
+
+h4 {
+    font-size: $header4;
+}
+
+h5 {
+    font-size: $header5;
+}
+
+h6 {
+    font-size: $header6;
+}
+
+input, button, p, label, li, a {
+    font-size: $paragraph-size;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes opening {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@import "./utility";
+@import "./navbar";
+@import "./hero";
+@import "./features";
+@import "./productive";
+@import "./testimonials";
+@import "./contact";
+@import "./footer";

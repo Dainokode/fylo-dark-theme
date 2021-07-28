@@ -1,0 +1,45 @@
+#testimonials {
+    min-height: 50vh;
+    @include flex(space-around, row);
+    flex-wrap: wrap;
+    @include container;
+    position: relative;
+    padding-bottom: 35rem;
+
+    .quote {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .testimonial {
+        flex: 1 1 30rem;
+        margin: 0 2rem;
+        padding: 3rem;
+        box-shadow: 1px 0 5px rgba(255, 255, 255, 0.1);
+        z-index: 2;
+        background: $main-bg;
+
+        .testimonial-img {
+            padding-right: 1rem;
+            img {
+                width: 34px;
+                border-radius: 50%;
+            }
+        }
+
+        .testimonial-container {
+            display: flex;
+            padding-top: 2rem;
+        }
+    }
+}
+
+@media(max-width: 1140px){
+    #testimonials {
+        .testimonial {
+            margin-bottom: 2rem;
+        }
+    }
+}

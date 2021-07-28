@@ -1,0 +1,24 @@
+@mixin container {
+    width: 90%;
+    margin: auto;
+}
+
+@mixin flex($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.btn {
+    cursor: pointer;
+    background: linear-gradient(to left, $blue, $cyan);
+    padding: 1.2rem 8rem;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+
+    &:hover {
+        background: linear-gradient($cyan);
+    }
+}
